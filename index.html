@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+    <select id="selectorL" onchange="translating()">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+    </select>
+    <h1>BREWDOG BEERS FILTER LIST</h1>
+    <div class="bloc-filtre-container">
+        <h2>Filtres</h2>
+        <div class="filtre-container">
+            <strong class="tout" onclick="filter('tout')">All</strong>
+            <strong class="moinsde6"  onclick="filter('moinsde6')">Less than 6 °</strong>
+            <strong class="plusde6"  onclick="filter('plusde6')">More than 6 °</strong>
+            <strong class="blanche"  onclick="filter('blanche')">White</strong>
+            <strong class="blonde"  onclick="filter('blonde')">Blond</strong>
+            <strong class="ambree"  onclick="filter('ambrees')">Amber</strong>
+            <strong class="brune"  onclick="filter('brune')">Brown</strong>
+            
+        </div>  
+    </div>
+
+    <div class="items-container">
+        <div class="item">
+            <img class="beerIMG"  alt="">
+            <div class="desc1">
+                <p data-name=""></p>
+                <p data-degrees=""></p>
+                <p data-typeofbeer=""></p>
+                <p data-first-brewed=""></p>
+                <p data-volume=""></p>
+            </div>
+            <div class="desc2">
+                <p data-description=""></p>
+                <p data-ingredients=""></p>
+            </div>
+        </div>  
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="translating.js"></script>
+</body>
+</html>
